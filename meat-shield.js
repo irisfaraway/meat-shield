@@ -26,7 +26,11 @@ function highlightWord(word) {
             var node;
             if (i) {
                 node = document.createElement('span');
-                node.style.backgroundColor = 'red';
+                node.style.backgroundImage = "url('https://raw.githubusercontent.com/irisfaraway/meat-shield/master/bacon.png')";
+                node.style.backgroundSize = '100% 100%';
+                node.style.backgroundPosition = 'center center';
+                node.style.backgroundRepeat = 'no-repeat'
+                node.style.padding = '5px';
                 node.style.color = 'white';
                 node.appendChild(document.createTextNode(word));
                 frag.appendChild(node);
